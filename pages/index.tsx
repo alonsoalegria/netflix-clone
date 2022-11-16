@@ -49,8 +49,6 @@ const Home = ({
   if (loading || subscription === null) return null
   
   if (!subscription) return <Plans products={products}/>
-    
-  
 
   return (
     <div className={`relative h-screen bg-gradient-to-b lg:h-[140vh] ${showModal && "!h-screen overflow-hidden"}`}>

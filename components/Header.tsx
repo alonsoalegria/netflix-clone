@@ -3,6 +3,7 @@ import Link from "next/link"
 import { useEffect, useState } from "react"
 import useAuth from "../hooks/useAuth"
 import BasicMenu from "./BasicMenu"
+import Image from "next/image"
 
 function Header() {
 
@@ -50,8 +51,8 @@ function Header() {
             <p className="hidden lg:inline">Kids</p>
             <BellIcon className="h-6 w-6"/>
             <Link href="/account">
-                <img 
-                src="https://rb.gy/g1pwyx" alt="" className="cursor-pointer rounded"/>
+                <Image 
+                src="https://rb.gy/g1pwyx" alt="" className="cursor-pointer rounded" width={25} height={25}/>
             </Link>
         </div>
     </header>
