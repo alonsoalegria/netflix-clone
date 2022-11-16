@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import useAuth from "../hooks/useAuth"
 import BasicMenu from "./BasicMenu"
 import Image from "next/image"
+import netflix from "../public/Nlogo.svg"
 
 function Header() {
 
@@ -29,11 +30,12 @@ function Header() {
   return (
     <header className={`${isScrolled && "bg-[#141414]"}`}>
         <div className="flex items-center space-x-2 md:space-x-10">
-            <img src="https://rb.gy/ulxxee"
-          width={100}
-          height={100}
-          className="cursor-pointer object-contain"
-        />
+            <Image src={netflix}
+            alt=""
+            width={80}
+            height={80}
+            className="cursor-pointer object-contain"
+            />
 
         <BasicMenu/>
 

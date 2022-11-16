@@ -6,6 +6,8 @@ import Membership from "../components/membership"
 import useAuth from "../hooks/useAuth"
 import useSubscription from "../hooks/useSubscription"
 import payments from "../lib/stripe"
+import netflix from "../public/Nlogo.svg"
+import Image from "next/image"
 
 interface Props {
     products: Product[]
@@ -25,12 +27,12 @@ function Account({ products }: Props) {
 
         <header className={`bg-[#141414]`}>
         <Link href="/">
-          <img
-            src="https://rb.gy/ulxxee"
-            width={120}
-            height={120}
+        <Image src={netflix}
+            alt=""
+            width={50}
+            height={50}
             className="cursor-pointer object-contain"
-          />
+            />
         </Link>
         <Link href="/account">
           <img
